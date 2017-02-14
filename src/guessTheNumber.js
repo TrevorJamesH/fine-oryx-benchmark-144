@@ -1,5 +1,6 @@
 function guessTheNumber(){
   let number = Math.floor(Math.random()*100)+1
+  console.log('Guess a number between 1 and 100')
   guess(number)
 }
 
@@ -16,7 +17,7 @@ function guess(number){
       guess(number)
     }
     else if(result.guess == number){
-      console.log('correct!')
+      console.log('Correct!')
     }
   });
 }
