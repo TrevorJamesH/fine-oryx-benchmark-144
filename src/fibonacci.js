@@ -8,17 +8,20 @@ export default function fibonacci(base,number){
 }
 
 function fibafy(number){
-  let index = 10
+  let index = 0
   let result = []
-  let first = false
+
+
+  while(getFib(index+1)<number){
+    index++
+  }
 
   while(index >= 0){
     if(number >= getFib(index)){
       number -= getFib(index)
       result.push(1)
-      first = true
     }
-    else if(first === true){
+    else{
       result.push(0)
     }
     index--
@@ -29,9 +32,9 @@ function fibafy(number){
 function decify(number){
   number = number.split('')
   let total = 0
-  for(let i = number.length - 1; i >= 0; i--){
+  for(let i = 0; i < number.length; i++){
     if(number[i] === '1'){
-      total += getFib(i)
+      total += getFib(number.length-(i+1))
     }
   }
   return total
