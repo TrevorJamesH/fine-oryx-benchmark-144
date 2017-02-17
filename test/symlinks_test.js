@@ -16,7 +16,7 @@ describe.only('symlinks()', function() {
 
     it("should return a resolved actual path", function() {
       expect(symlinks('/bin:/usr/bin',
-      '/usr/bin:/usr/local/bin',
+      '/usr/bin:/usr/local/bin/',
       '/usr/local/bin/log:/var/log-2017',
       '/bin/log/lib'))
       .to.eql('/var/log-2017/lib')
