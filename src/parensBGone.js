@@ -1,7 +1,6 @@
 export default function parensBGone(original){
   let parenArray = original.split('')
   let checked = []
-  let choppingBlock = []
   let lastParen
   let numberOfParens = 0
 
