@@ -2,7 +2,7 @@ import { expect } from 'chai'
 import symlinks from '../src/symlinks'
 
 
-describe.only('symlinks()', function() {
+describe('symlinks()', function() {
   it('should be a function', function() {
     expect(symlinks).to.be.a('function')
   })
