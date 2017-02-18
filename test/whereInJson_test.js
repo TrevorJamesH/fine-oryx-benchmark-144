@@ -2,7 +2,7 @@ import { expect } from 'chai'
 import whereInJson from '../src/whereInJson'
 
 
-describe.only('whereInJson()', function() {
+describe('whereInJson()', function() {
   it('should be a function', function() {
     expect(whereInJson).to.be.a('function')
   })
